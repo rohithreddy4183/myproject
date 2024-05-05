@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <style>
+        body
+        {
+            background-image: url("https://wallpapers.com/images/hd/professional-background-9clg4ra15cwxpfk5.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+        }
+        h1
+        {
+            
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: 2px solid aqua;
+            color: whitesmoke;
+
+        }
+        #posi
+        {
+            padding: 0 15px;
+            color: white;
+        }
+        #Layout
+        {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: transparent;
+            border: 2px solid aqua;
+            box-shadow: 5px 5px 20px 0 aqua;
+        }
+        button
+        {
+            width: 30%;
+            height: 30px;
+            border: 1px solid;
+            background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+            
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s;
+            margin-bottom: 20px;
+            align-items: center;
+            box-shadow: 0 0 20px lightblue;
+            
+        }
+        label
+        {
+            color: rgb(9, 255, 0);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            margin-left: 30px;
+        }
+        #tulsi
+        {
+            margin-right: 100px;
+        }
+        #sai
+        {
+            margin-right: 45px;
+        }
+        #rohit
+        {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Layout">
+    <h1>Team Portfolio</h1>
+    <form>
+        <div id="posi">
+            <p>
+                <label id="rohit">Rohit Reddy Tamma</label>
+                <button onclick="openPortfolio('rohit.html')">ROHIT</button>
+            </p>
+            <p>
+                <label id="sai">Padma Sai Gorrela</label>
+                <button onclick="openPortfolio('Sai.html')">SAI</button>
+            </p>
+            <p>
+                <label id="tulsi">Tulsi Gupta</label>
+                <button onclick="openPortfolio('tulsi.html')">TULSI</button>
+            </p>
+            <p>
+                <label>Himaja Reddy Tatireddy</label>
+                <button onclick="openPortfolio('himaja.html')">HIMJA</button>
+            </p>
+        </div>
+    </form>
+</div>
+<script>
+    function openPortfolio(url) 
+    {
+        window.open(url, '_blank');
+    }
+</script>
+
+</body>
+</html>
